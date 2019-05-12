@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 public class testng {
   @Test
   public void Verify_about_us() {
-	  System.setProperty("webdriver.chrome.driver", "/home/edureka/chromedriver");
+	  System.setProperty("webdriver.chrome.driver", "chromedriver");
 		ChromeOptions chromeOptions = new ChromeOptions();
 		chromeOptions.addArguments("--headless");
 		
