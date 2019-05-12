@@ -11,7 +11,7 @@ public class testng {
   public void Verify_about_us() {
 	  System.setProperty("webdriver.chrome.driver", "chromedriver");
 		ChromeOptions chromeOptions = new ChromeOptions();
-		chromeOptions.addArguments("--headless");
+		chromeOptions.addArguments("headless","no-sandbox");
 		
 		ChromeDriver driver = new ChromeDriver();
 		
