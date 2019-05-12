@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
  * Hello world!
  *
  */
-public class App 
+public class AppTest 
 {
 	@Test
 	
