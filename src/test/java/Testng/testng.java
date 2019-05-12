@@ -13,13 +13,14 @@ public class testng {
   public void Verify_about_us() {
 	  System.setProperty("webdriver.chrome.driver", "chromedriver");
 		ChromeOptions chromeOptions = new ChromeOptions();
-		chromeOptions.addArguments("headless","no-sandbox");
+		chromeOptions.addArguments("--headless");
+	    chromeOptions.addArguments("--no-sandbox");
 		
 		ChromeDriver driver = new ChromeDriver();
 		
 		//driver.get("http://www.edureka.co");
 		driver.get("http://192.168.92.103:9943/index.php");
-		driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 		driver.findElementByLinkText("About Us").click();
 		//String Input = "about";
 		String text = driver.findElementById("PID-ab2-pg").getText();
