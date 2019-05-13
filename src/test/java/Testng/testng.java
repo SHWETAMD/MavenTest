@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 public class testng {
   @Test
   public void Verify_about_us() {
-	  System.setProperty("webdriver.chrome.driver", "chromedriver");
+	  System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/workspace/job4/chromedriver");
 		ChromeOptions chromeOptions = new ChromeOptions();
 		chromeOptions.addArguments("--headless");
 	    chromeOptions.addArguments("--no-sandbox");
